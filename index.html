@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" author="Oliver Müller" />
+    <title>Password Check Z</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lobster&family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="body">
+    <h1>Password Check Z</h1>
+    <main class="main-container">
+      <div class="pwd-input-box">
+        <div class="pwd-input">
+          <input id="createPwd" type="password" />
+          <label for="hide-label">Create password</label>
+        </div>
+        <div class="pwd-input">
+          <input id="confirmPwd" type="password" />
+          <label for="hide-label">Confirm password</label>
+        </div>
+        <div class="pwd-input">
+          <input
+            class="show-hide-pwd"
+            id="switch-button"
+            type="button"
+            value="Show Passwords"
+          />
+        </div>
+      </div>
+      <div class="pwd-check-box">
+        <p class="pwd-check" class="invalid" id="equal">Passwords are equal</p>
+        <p class="pwd-check" class="invalid" id="lowerCase">
+          Lower Case Letters
+        </p>
+        <p class="pwd-check" class="invalid" id="upperCase">
+          Upper Case Letters
+        </p>
+        <p class="pwd-check" class="invalid" id="number">Contains Numbers</p>
+        <p class="pwd-check" class="invalid" id="length">
+          At least 10 characters long
+        </p>
+      </div>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
