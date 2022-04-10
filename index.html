@@ -18,35 +18,21 @@
     <h1>Password Check Z</h1>
     <main class="main-container">
       <div class="pwd-input-box">
-        <div class="pwd-input">
-          <input id="createPwd" type="password" />
-          <label for="hide-label">Create password</label>
-        </div>
-        <div class="pwd-input">
-          <input id="confirmPwd" type="password" />
-          <label for="hide-label">Confirm password</label>
-        </div>
-        <div class="pwd-input">
-          <input
-            class="show-hide-pwd"
-            id="switch-button"
-            type="button"
-            value="Show Passwords"
-          />
-        </div>
+        <input class="password" type="password" id="createPwd" />
+        <input class="password" type="password" id="confirmPwd" />
+        <input
+          type="button"
+          class="style-button"
+          id="switch-button"
+          value="Show Password"
+        />
       </div>
       <div class="pwd-check-box">
-        <p class="pwd-check" class="invalid" id="equal">Passwords are equal</p>
-        <p class="pwd-check" class="invalid" id="lowerCase">
-          Lower Case Letters
-        </p>
-        <p class="pwd-check" class="invalid" id="upperCase">
-          Upper Case Letters
-        </p>
-        <p class="pwd-check" class="invalid" id="number">Contains Numbers</p>
-        <p class="pwd-check" class="invalid" id="length">
-          At least 10 characters long
-        </p>
+        <p>Passwords are equal <span id="equal">❌</span></p>
+        <p>Lower Case Letters <span id="lowercase">❌</span></p>
+        <p>Upper Case Letters <span id="uppercase">❌</span></p>
+        <p>Contains Numbers <span id="numbers">❌</span></p>
+        <p>At least 10 character long <span id="length">❌</span></p>
       </div>
     </main>
     <script src="script.js"></script>
