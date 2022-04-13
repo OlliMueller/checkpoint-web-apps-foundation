@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" author="Oliver Müller" />
+    <title>Password Check Z</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lobster&family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="body">
+    <h1>Password Check Z</h1>
+    <main class="main-container">
+      <div class="pwd-input-box">
+        <input class="password" type="password" id="createPwd" />
+        <input class="password" type="password" id="confirmPwd" />
+        <input
+          type="button"
+          class="style-button"
+          id="switch-button"
+          value="Show Password"
+        />
+      </div>
+      <div class="pwd-check-box">
+        <p>Passwords are equal <span id="equal">❌</span></p>
+        <p>Lower Case Letters <span id="lowercase">❌</span></p>
+        <p>Upper Case Letters <span id="uppercase">❌</span></p>
+        <p>Contains Numbers <span id="numbers">❌</span></p>
+        <p>At least 10 character long <span id="length">❌</span></p>
+      </div>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
